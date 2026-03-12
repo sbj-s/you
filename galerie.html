@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You'manity | Galerie</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar">
+    <button class="burger" id="burgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo-center">
+      <img src="img/logo.png" alt="Logo You'manity" class="logo-img">
+    </a>
+    <a href="index.html#don" class="btn-donate-nav">FAIRE UN DON</a>
+  </nav>
+</header>
+
+<!-- ===== MENU LATÉRAL ===== -->
+<div class="overlay" id="overlay"></div>
+<aside class="side-menu" id="sideMenu">
+  <button class="close-menu" id="closeMenu" aria-label="Fermer">&#10005;</button>
+  <nav class="side-nav">
+    <a href="index.html#accueil" class="side-link">🏠 Accueil</a>
+    <a href="index.html#missions" class="side-link">🤝 Nos Missions</a>
+    <a href="index.html#propos" class="side-link">ℹ️ À Propos</a>
+    <a href="index.html#adhesion" class="side-link">✍️ Adhésion</a>
+    <a href="galerie.html" class="side-link">🖼️ Galerie</a>
+    <a href="index.html#don" class="side-link side-link--don">❤️ Faire un Don</a>
+  </nav>
+</aside>
+
+<!-- ===== GALERIE ===== -->
+<section class="galerie-page">
+  <div class="galerie-header">
+    <a href="index.html" class="btn-retour">← Retour</a>
+    <h1 class="section-title">Nos actions en images</h1>
+    <p>Découvrez nos actions sur le terrain, en France et en Afrique.</p>
+  </div>
+
+  <div class="galerie-grid">
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action1.jpg" alt="Jeux de société solidaires">
+      <div class="galerie-caption">Jeux de société solidaires</div>
+    </div>
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action2.jpg" alt="Sortie culturelle au musée">
+      <div class="galerie-caption">Sortie culturelle au musée</div>
+    </div>
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action3.jpg" alt="Maraude - distribution alimentaire">
+      <div class="galerie-caption">Maraude - distribution alimentaire</div>
+    </div>
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action4.jpg" alt="Présence sur le terrain">
+      <div class="galerie-caption">Présence sur le terrain</div>
+    </div>
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action5.jpg" alt="Coiffure solidaire">
+      <div class="galerie-caption">Coiffure solidaire</div>
+    </div>
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action6.jpg" alt="Inauguration d'un puits en Afrique">
+      <div class="galerie-caption">Inauguration d'un puits en Afrique</div>
+    </div>
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action7.jpg" alt="Maraude nocturne">
+      <div class="galerie-caption">Maraude nocturne</div>
+    </div>
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action8.jpg" alt="Rencontre et écoute">
+      <div class="galerie-caption">Rencontre et écoute</div>
+    </div>
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action9.jpg" alt="Aide aux devoirs en classe">
+      <div class="galerie-caption">Aide aux devoirs en classe</div>
+    </div>
+    <div class="galerie-item" onclick="openLightbox(this)">
+      <img src="img/action10.jpg" alt="Distribution de nuit">
+      <div class="galerie-caption">Distribution de nuit</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&#10005;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <p class="lightbox-caption" id="lightboxCaption"></p>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-container">
+    <img src="img/logo.png" alt="Logo You'manity" class="logo-footer">
+    <p class="footer-tagline">Association loi 1901 à but non lucratif</p>
+    <div class="footer-info">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📧 <a href="mailto:youmanity@hotmail.com">youmanity@hotmail.com</a></p>
+        <p>📞 <a href="tel:+33767806723">07 67 80 67 23</a></p>
+        <p>📍 Chevilly la rue, France</p>
+      </div>
+      <div class="footer-col">
+        <h4>Nous suivre</h4>
+        <div class="social-links">
+          <a href="https://facebook.com/hak.lebeauf" target="_blank" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.883v2.271h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            Facebook
+          </a>
+          <a href="https://instagram.com/you_manity94" target="_blank" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="https://snapchat.com/add/hakim-youmanity" target="_blank" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M12.065.026C9.696.026 5.6 1.262 5.6 6.933v1.706c-.48.214-1.44-.187-1.44-.187-.64-.16-1.225.266-1.12.852.054.32.373 1.012 1.6 1.493.107.053.267.107.427.133-.267.533-.64 1.093-1.2 1.573-.88.72-1.413 1.04-2.507 1.28C.213 13.997 0 14.423 0 14.797c0 .96 1.68 1.28 1.68 1.28.213.747.8 1.04.8 1.04.96 1.627 4.373 2.88 7.893 2.027l.053.027c.48.64 1.547 1.6 3.573 2.24.267.08.373.32.373.32l.027.267h-.053c-.48 0-.96.32-.96.853 0 .533.507.8.96.8h4.16c.48 0 .96-.267.96-.8s-.48-.853-.96-.853h-.08l.027-.267s.107-.213.373-.32c2.027-.64 3.093-1.6 3.573-2.24l.053-.027c3.52.853 6.934-.4 7.893-2.027 0 0 .587-.293.8-1.04 0 0 1.68-.32 1.68-1.28 0-.373-.213-.8-.853-.96-1.093-.24-1.627-.56-2.506-1.28-.56-.48-.934-1.04-1.2-1.573.16-.027.32-.08.426-.133 1.227-.48 1.547-1.173 1.6-1.493.107-.586-.48-1.013-1.12-.853 0 0-.96.4-1.44.187V6.933C21.573 1.262 17.477.026 15.107.026c-.8-.213-.96-.133-1.546-.107H13.2c-.586-.026-.746-.106-1.173-.107-.053.213.038.213-.1.107"/></svg>
+            Snapchat
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Ce qu'on fait</h4>
+        <p>🥘 Maraudes alimentaires</p>
+        <p>📚 Aide aux devoirs</p>
+        <p>🎭 Sorties culturelles</p>
+        <p>💧 Puits en Afrique</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 You'manity. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script>
+  // Burger menu
+  const burgerBtn = document.getElementById('burgerBtn');
+  const sideMenu = document.getElementById('sideMenu');
+  const overlay = document.getElementById('overlay');
+  const closeMenu = document.getElementById('closeMenu');
+  const sideLinks = document.querySelectorAll('.side-link');
+
+  function openMenu() {
+    sideMenu.classList.add('open');
+    overlay.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeSideMenu() {
+    sideMenu.classList.remove('open');
+    overlay.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+
+  burgerBtn.addEventListener('click', openMenu);
+  closeMenu.addEventListener('click', closeSideMenu);
+  overlay.addEventListener('click', closeSideMenu);
+  sideLinks.forEach(function(link) { link.addEventListener('click', closeSideMenu); });
+
+  // Lightbox
+  function openLightbox(el) {
+    const img = el.querySelector('img');
+    const caption = el.querySelector('.galerie-caption');
+    document.getElementById('lightboxImg').src = img.src;
+    document.getElementById('lightboxCaption').textContent = caption.textContent;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+</body>
+</html>
