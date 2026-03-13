@@ -811,3 +811,102 @@ footer {
     .galerie-page { padding: 100px 5% 60px; }
     .galerie-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
 }
+
+/* ===== BOUTONS DON ===== */
+.don-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.don-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 25px 40px;
+    border-radius: 16px;
+    text-decoration: none;
+    min-width: 220px;
+    transition: var(--transition);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.don-btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+}
+
+.don-btn--helloasso {
+    background: #fff;
+    color: #333;
+    border: 2px solid #4CAF50;
+}
+
+.don-btn--helloasso:hover { background: #f0fff0; }
+
+.don-btn--paypal {
+    background: #fff;
+    color: #333;
+    border: 2px solid #003087;
+}
+
+.don-btn--paypal:hover { background: #f0f4ff; }
+
+.don-btn-icon { font-size: 2rem; }
+
+.don-btn-label {
+    font-size: 0.95rem;
+    color: #333;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.don-btn-label strong {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.don-btn-sub {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .don-options { flex-direction: column; align-items: center; }
+    .don-btn { min-width: 280px; }
+}
+
+/* ===== PAGE DON ===== */
+.don-page {
+    min-height: 100vh;
+    padding: 140px 10% 80px;
+    background: var(--gray-bg);
+    text-align: center;
+}
+
+.don-page-intro {
+    font-size: 1.05rem;
+    opacity: 0.75;
+    max-width: 550px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.don-mail {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.65;
+}
+
+.don-mail a {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.don-mail a:hover { text-decoration: underline; }

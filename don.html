@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You'manity | Faire un don</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar">
+    <button class="burger" id="burgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo-center">
+      <img src="img/logo.png" alt="Logo You'manity" class="logo-img">
+    </a>
+    <a href="don.html" class="btn-donate-nav">FAIRE UN DON</a>
+  </nav>
+</header>
+
+<!-- ===== MENU LATÉRAL ===== -->
+<div class="overlay" id="overlay"></div>
+<aside class="side-menu" id="sideMenu">
+  <button class="close-menu" id="closeMenu" aria-label="Fermer">&#10005;</button>
+  <nav class="side-nav">
+    <a href="index.html#accueil" class="side-link">🏠 Accueil</a>
+    <a href="index.html#missions" class="side-link">🤝 Nos Missions</a>
+    <a href="index.html#propos" class="side-link">ℹ️ À Propos</a>
+    <a href="index.html#adhesion" class="side-link">✍️ Adhésion</a>
+    <a href="galerie.html" class="side-link">🖼️ Galerie</a>
+    <a href="don.html" class="side-link side-link--don">❤️ Faire un Don</a>
+  </nav>
+</aside>
+
+<!-- ===== PAGE DON ===== -->
+<section class="don-page">
+  <a href="index.html" class="btn-retour">← Retour</a>
+  <h1 class="section-title">Faire un don</h1>
+  <p class="don-page-intro">Chaque don, même petit, change une vie. Choisissez votre moyen de paiement préféré :</p>
+
+  <div class="don-options">
+
+    <a href="https://www.helloasso.com/associations/you-manity" target="_blank" class="don-btn don-btn--helloasso">
+      <span class="don-btn-icon">💚</span>
+      <span class="don-btn-label">Donner via <strong>HelloAsso</strong></span>
+      <span class="don-btn-sub">Sans frais pour l'association</span>
+    </a>
+
+    <a href="https://www.paypal.com/paypalme/associationyoumanity" target="_blank" class="don-btn don-btn--paypal">
+      <span class="don-btn-icon">💙</span>
+      <span class="don-btn-label">Donner via <strong>PayPal</strong></span>
+      <span class="don-btn-sub">Paiement sécurisé</span>
+    </a>
+
+  </div>
+
+  <p class="don-mail">Vous pouvez aussi nous contacter directement : <a href="mailto:youmanity@hotmail.com">youmanity@hotmail.com</a></p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-container">
+    <img src="img/logo.png" alt="Logo You'manity" class="logo-footer">
+    <p class="footer-tagline">Association loi 1901 à but non lucratif</p>
+    <div class="footer-info">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📧 <a href="mailto:youmanity@hotmail.com">youmanity@hotmail.com</a></p>
+        <p>📞 <a href="tel:+33767806723">07 67 80 67 23</a></p>
+        <p>📍 Chevilly-la-Rue, France</p>
+      </div>
+      <div class="footer-col">
+        <h4>Nous suivre</h4>
+        <div class="social-links">
+          <a href="https://facebook.com/hak.lebeauf" target="_blank" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.883v2.271h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            Facebook
+          </a>
+          <a href="https://instagram.com/you_manity94" target="_blank" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="https://snapchat.com/add/hakim-youmanity" target="_blank" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.304-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg>
+            Snapchat
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Ce qu'on fait</h4>
+        <p>🥘 Maraudes alimentaires</p>
+        <p>📚 Aide aux devoirs</p>
+        <p>🎭 Sorties culturelles</p>
+        <p>💧 Puits en Afrique</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 You'manity. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script>
+  const burgerBtn = document.getElementById('burgerBtn');
+  const sideMenu = document.getElementById('sideMenu');
+  const overlay = document.getElementById('overlay');
+  const closeMenu = document.getElementById('closeMenu');
+  const sideLinks = document.querySelectorAll('.side-link');
+
+  function openMenu() { sideMenu.classList.add('open'); overlay.classList.add('show'); document.body.style.overflow = 'hidden'; }
+  function closeSideMenu() { sideMenu.classList.remove('open'); overlay.classList.remove('show'); document.body.style.overflow = ''; }
+
+  burgerBtn.addEventListener('click', openMenu);
+  closeMenu.addEventListener('click', closeSideMenu);
+  overlay.addEventListener('click', closeSideMenu);
+  sideLinks.forEach(function(link) { link.addEventListener('click', closeSideMenu); });
+</script>
+
+</body>
+</html>
